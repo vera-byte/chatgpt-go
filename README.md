@@ -29,7 +29,7 @@ func main() {
 		chatgpt.WithDebug(true),                            // 开启调试模式
 		chatgpt.WithTimeout(120*time.Second),               // 设置超时时间为120秒
 		chatgpt.WithAccessToken(token),                     // 设置token
-		chatgpt.WithBaseURI("https://freechat.lidong.xin"), // 设置base uri
+		chatgpt.WithBaseURI("http://proxy.aiapp.cc"), // 设置base uri
 	)
 
 	// chat in independent conversation
@@ -64,7 +64,7 @@ func main() {
 		chatgpt.WithDebug(true),
 		chatgpt.WithTimeout(60*time.Second),
 		chatgpt.WithAccessToken(token),
-		chatgpt.WithBaseURI("https://freechat.lidong.xin"),
+		chatgpt.WithBaseURI("http://proxy.aiapp.cc"),
 	)
 
 	// chat in continuous conversation
@@ -114,7 +114,7 @@ func main() {
 		chatgpt.WithDebug(true),
 		chatgpt.WithTimeout(120*time.Second),
 		chatgpt.WithAccessToken(token),
-		chatgpt.WithBaseURI("https://freechat.xyhelper.cn"),
+		chatgpt.WithBaseURI("http://proxy.aiapp.cc"),
 	)
 
 	message := "你好"
@@ -161,10 +161,4 @@ go install github.com/xyhelper/chatgpt-go/cli/chatgpt-go@latest
 chatgpt-go
 ```
 
-## 作品演示
 
-[https://xyhelper.cn](https;//xyhelper.cn)
-
-## 友情链接
-
-- [CoolAdmin](https://cool-js.com) - 一个项目,用 COOL 就够了。AI 编码、物联网、函数云开发等更加智能和全面的功能，让应用开发紧跟时代的步伐，cool 绝不落后！！！
